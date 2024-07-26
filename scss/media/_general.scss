@@ -1,0 +1,21 @@
+@import 'title';
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.flex {
+	display: flex;
+}
+
+.trans-5 {
+	transition: 0.5s all;
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 91.111%;
+	}
+}

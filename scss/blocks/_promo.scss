@@ -1,4 +1,5 @@
 .promo {
+    overflow: hidden;
     padding-top: 10.677vw;
     &_wrapper {
         position: relative;
@@ -18,7 +19,7 @@
         width: 34.9vw;
         img {
             width: 4.01vw;
-            animation: changeColor 0.8s infinite linear;
+            animation: changeColor 1.6s infinite linear;
         }
     }
     .title_40 {

@@ -2,13 +2,14 @@
     position: fixed;
     z-index: 5;
     top: 0;
-    padding: 1.145vw 0 0.625vw;
     width: 100%;
-    border-bottom: 4px solid #5a5a5a;
+    background: #1b1b1b;
     &_wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1.145vw 0 0.625vw;
+        border-bottom: 4px solid #5a5a5a;
     }
     &_logo {
         img {

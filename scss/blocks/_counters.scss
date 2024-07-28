@@ -1,0 +1,52 @@
+.counters {
+    padding-top: 2.343vw;
+    &_wrapper {
+        display: flex;
+        gap: 5.052vw;
+        padding: 2.031vw  2.604vw;
+        background: rgba(255, 255, 255, 0.23);
+        & > .title_32 {
+            display: flex;
+            align-items: center;
+            width: 36.145vw;
+        }
+    }
+    &_items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.354vw 3.593vw;
+        width: 40vw;
+    }
+    &_item {
+        width: 15.885vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .counters {
+        padding-top: 9.722vw;
+        &_wrapper {
+            flex-direction: column;
+            gap: 7.222;
+            padding: 5.277vw  9.444vw;
+            & > .title_32 {
+                width: 100%;
+            }
+        }
+        &_items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8.333vw 0;
+            width: 100%;
+        }
+        &_item {
+            width: 45%;
+        }
+        .title_32 {
+            font-size: 4.444vw;
+        }
+        .title_44 {
+            font-size: 3.888vw;
+        }
+    }
+}

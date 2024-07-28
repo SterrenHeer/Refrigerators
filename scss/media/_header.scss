@@ -1,6 +1,8 @@
 @media (max-width: 992px) {
     .header {
-        padding: 3.611vw 0 4.166vw;
+        &_wrapper {
+            padding: 3.611vw 0 2.166vw;
+        }
         &_logo {
             img {
                 width: 41.944vw;
@@ -13,7 +15,7 @@
                     padding: 1.388vw;
                     width: 6.388vw;
                     height: 6.388vw;
-                    border-radius: 1.388;
+                    border-radius: 1.388vw;
                 }
                 .title {
                     display: none;

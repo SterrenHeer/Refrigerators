@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    .promo {
+        padding-top: 26.111vw;
+        &_car {
+            display: none;
+        }
+        &_arrows {
+            justify-content: space-between;
+            gap: 3.333vw 3.611vw;
+            margin-top: 9.444vw;
+            width: 100%;
+            img {
+                width: 10.277vw;
+            }
+        }
+        .title_40, .title_90 {
+            margin-top: 1.388vw;
+        }
+        .button {
+            margin-top: 6.388vw;
+            width: 100%;
+        }
+    }
+}

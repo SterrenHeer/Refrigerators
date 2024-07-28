@@ -1,0 +1,42 @@
+.promo {
+    padding-top: 10.677vw;
+    &_wrapper {
+        position: relative;
+    }
+    &_car {
+        position: absolute;
+        top: 0;
+        right: -6.666vw;
+        width: 65.844vw;
+        height: 37.187vw;
+    }
+    &_arrows {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.354vw;
+        margin-top: 3.437vw;
+        width: 34.9vw;
+        img {
+            width: 4.01vw;
+            animation: changeColor 0.8s infinite linear;
+        }
+    }
+    .title_40 {
+        margin-top: 1.927vw;
+    }
+    .title_90 {
+        margin-top: 1.302vw;
+    }
+    .button {
+        margin-top: 2.968vw;
+        width: 19.166vw;
+    }
+    @keyframes changeColor {
+        50% {
+            filter: brightness(0) saturate(100%) invert(33%) sepia(0%) saturate(188%) hue-rotate(275deg) brightness(78%) contrast(99%);
+        }
+        100% {
+            filter: brightness(0) saturate(100%) invert(94%) sepia(0%) saturate(523%) hue-rotate(278deg) brightness(79%) contrast(98%);
+        }
+    }
+}

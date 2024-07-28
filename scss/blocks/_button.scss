@@ -16,3 +16,10 @@
         background-color: rgba(#fec269, 0.8);
     }
 }
+
+@media (max-width: 992px) {
+    .button {
+        padding: 3.333vw;
+        font-size: 4.444vw;
+    }
+}

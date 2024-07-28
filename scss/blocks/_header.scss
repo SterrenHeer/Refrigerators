@@ -19,7 +19,7 @@
     &_call {
         display: flex;
         gap: 3.333vw;
-        .title_32 {
+        a {
             display: flex;
             align-items: center;
             gap: 1.51vw;
@@ -39,5 +39,14 @@
                 }
             }
         }
+        .button {
+            width: 19.166vw;
+        }
+    }
+}
+.burger {
+    display: none;
+    &_button {
+        display: none;
     }
 }

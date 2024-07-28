@@ -1,0 +1,70 @@
+@media (max-width: 992px) {
+    .header {
+        padding: 3.611vw 0 4.166vw;
+        &_logo {
+            img {
+                width: 41.944vw;
+                height: 8.333vw;
+            }
+        }
+        &_call {
+            a {
+                img {
+                    padding: 1.388vw;
+                    width: 6.388vw;
+                    height: 6.388vw;
+                    border-radius: 1.388;
+                }
+                .title {
+                    display: none;
+                }
+            }
+            .button {
+                display: none;
+            }
+        }
+    }
+    .burger {
+        position: fixed;
+        z-index: 6;
+        flex-direction: column;
+        gap: 5.833vw;
+        padding: 5vw 2.777vw;
+        width: calc(100% - 2.777vw - 2.777vw);
+        background: #fff;
+        &_button {
+            display: block;
+            width: 11.388vw;
+        }
+        &_close {
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+            z-index: 5;
+            img {
+                width: 4.722vw;
+                height: 4.722vw;
+                cursor: pointer;
+            }
+        }
+        &_menu {
+            display: flex;
+            flex-direction: column;
+            gap: 3.888vw;
+        }
+        .title {
+            color: #000;
+        }
+        .title_20 {
+            font-weight: 500;
+            font-size: 5.555vw;
+        }
+        .title_24 {
+            font-weight: 600;
+            font-size: 6.666vw;
+        }
+        .button {
+            width: 100%;
+        }
+    }
+}

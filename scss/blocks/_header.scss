@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    padding: 1.145vw 0 0.625vw;
+    width: 100%;
+    border-bottom: 4px solid #5a5a5a;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_logo {
+        img {
+            width: 21.822vw;
+            height: 4.322vw;
+        }
+    }
+    &_call {
+        display: flex;
+        gap: 3.333vw;
+        .title_32 {
+            display: flex;
+            align-items: center;
+            gap: 1.51vw;
+            img {
+                padding: 0.416vw;
+                width: 1.927vw;
+                height: 1.927vw;
+                border: 1px solid #fec269;
+                border-radius: 0.26vw;
+                &:hover {
+                    filter: saturate(180%);
+                }
+            }
+            .title {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

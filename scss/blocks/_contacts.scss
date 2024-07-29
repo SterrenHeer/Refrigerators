@@ -55,6 +55,37 @@
             margin: 0 auto;
         }
     }
+    &_map {
+        position: relative;
+        &_item {
+            width: 100%;
+            height: 38.802vw;
+            border: none;
+        }
+        &_content {
+            position: absolute;
+            top: 50%;
+            left: 6.666%;
+            transform: translate(0, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5vw;
+            min-width: 26.562vw;
+            height: 18.489vw;
+            padding: 2.031vw;
+            background: #fff;
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 2.395vw;
+                color: #000;
+                img {
+                    height: 1.05vw;
+                }
+            }
+        }
+    }
     @keyframes changeSize {
         50% {
             transform: scale(1.14);

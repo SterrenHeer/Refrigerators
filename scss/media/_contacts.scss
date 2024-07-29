@@ -40,5 +40,25 @@
                 width: 100%;
             }
         }
+        &_map {
+            &_item {
+                height: 175.555vw;
+            }
+            &_content {
+                top: 7.5vw;
+                left: 4.444vw;
+                transform: none;
+                gap: 5.555vw;
+                min-width: 59.722vw;
+                height: 36.944vw;
+                padding: 3.611vw 4.722vw;
+                .title {
+                    gap: 4.722vw;
+                    img {
+                        height: 4.166vw;
+                    }
+                }
+            }
+        }
     }
 }

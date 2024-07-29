@@ -43,11 +43,9 @@
             top: 5vw;
             right: 5vw;
             z-index: 5;
-            img {
-                width: 4.722vw;
-                height: 4.722vw;
-                cursor: pointer;
-            }
+            width: 4.722vw;
+            height: 4.722vw;
+            cursor: pointer;
         }
         &_menu {
             display: flex;

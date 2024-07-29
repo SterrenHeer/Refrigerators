@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    .about {
+        margin-top: 13.888vw;
+        min-height: auto;
+        &_bg {
+            object-fit: cover;
+        }
+        &_text {
+            gap: 4.166vw;
+            padding-top: 25.333vw;
+            padding-bottom: 31.111vw;
+            width: 100%;
+        }
+        &_logo {
+            bottom: 2.777vw;
+            width: 51.666vw;
+        }
+        .title_48 {
+            top: 4.444vw;
+            padding: 2.944vw 4.944vw 2.944vw 11.111vw;
+            width: auto;
+        }
+    }
+}

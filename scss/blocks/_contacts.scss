@@ -1,0 +1,66 @@
+.contacts {
+    padding: 5.229vw 0;
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.197vw;
+        margin: 0 auto;
+        width: 69.27%;
+        .title {
+            text-align: center;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25vw;
+            img {
+                width: 2.343vw;
+                height: 2.343vw;
+                animation: changeSize 1.6s infinite linear;
+            }
+        }
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.927vw;
+        width: 75.86%;
+        margin: 0 auto;
+        &_input, textarea {
+            padding: 1.197vw 0.937vw;
+            width: calc(100% - 0.937vw - 0.937vw);
+            border: none;
+            font-weight: 300;
+            font-size: 1.25vw;
+            color: #000;
+            background: #d9d9d9;
+            outline: none;
+            &::placeholder {
+                font-weight: 300;
+                font-size: 1.25vw;
+                color: #000;
+            }
+        }
+        .doubles {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: calc(45.98% - 0.937vw - 0.937vw);
+            }
+        }
+        .button {
+            width: 19.166vw;
+            margin: 0 auto;
+        }
+    }
+    @keyframes changeSize {
+        50% {
+            transform: scale(1.14);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

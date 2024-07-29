@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+    .contacts {
+        padding: 13.888vw 0;
+        &_wrapper {
+            gap: 2.5vw;
+            width: 91.111%;
+            a {
+                gap: 5.555vw;
+                img {
+                    width: 6.944vw;
+                    height: 6.944vw;
+                }
+            }
+            .title_48 {
+                &:nth-child(3) {
+                    font-size: 5.555vw;
+                }
+            }
+        }
+        &_form {
+            gap: 2.777vw;
+            width: 100%;
+            &_input, textarea {
+                padding: 4.722vw;
+                width: calc(100% - 4.722vw - 4.722vw);
+                font-size: 3.611vw;
+                &::placeholder {
+                    font-size: 3.611vw;
+                }
+            }
+            .doubles {
+                flex-direction: column;
+                gap: 2.777vw;
+                input {
+                    width: calc(100% - 4.722vw - 4.722vw);
+                }
+            }
+            .button {
+                margin-top: 1.944vw;
+                width: 100%;
+            }
+        }
+    }
+}

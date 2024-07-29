@@ -1,0 +1,66 @@
+@media (max-width: 992px) {
+    .consult, .thanks, .callback {
+        &_modal {
+            padding: 14.722vw 5.833vw 8.333vw 5.833vw;
+            width: calc(100% - 5.833vw - 5.833vw);
+            height: fit-content;
+            max-height: calc(100vh - 14.722vw - 8.333vw);
+        }
+        &_close {
+            top: 5vw;
+            right: 5vw;
+            width: 6.111vw;
+        }
+        &_image {
+            display: none;
+        }
+        &_content {
+            width: 100%;
+        }
+        &_form {
+            gap: 4.166vw;
+            margin-top: 5.277vw;
+            &_input, textarea {
+                width: calc(100% - 3.611vw - 3.611vw);
+                padding: 5vw 3.611vw;
+                font-size: 3.888vw;
+                &::placeholder {
+                    font-size: 3.888vw;
+                }
+            }
+            &_label {
+                & > div {
+                    width: 50vw;
+                }
+                .gold {
+                    display: inline;
+                    margin-left: 0;
+                }
+            }
+            &_view {
+                width: 4.444vw;
+                height: 4.444vw;
+                margin-right: 3.055vw;
+                border-radius: 0.833vw;
+            }
+            &_icon {
+                width: 3.333vw;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+        nobr {
+            text-wrap: wrap;
+        }
+        .promo_arrows {
+            display: none;
+        }
+        .title_24 {
+            margin-top: 1.388vw;
+        }
+        .title_48 {
+            font-size: 5.555vw;
+        }
+    }
+}

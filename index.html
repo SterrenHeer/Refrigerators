@@ -18,7 +18,7 @@
 						<img src="icons/call.svg" alt="call">
 						<span class="title title_32 semi-bold gold">+375 (29) 626-77-35</span>
 					</a>
-					<button class="button">Обратный звонок</button>
+					<button class="button" data-callback>Обратный звонок</button>
 				</div>
 				<img class="burger_button" src="icons/burger.svg" alt="burger">
 			</div>
@@ -32,7 +32,7 @@
 			<a href="#about" class="title title_20">О нас</a>
 			<a href="#contacts" class="title title_20">Контакты</a>
 		</div>
-		<button class="button">Обратный звонок</button>
+		<button class="button" data-callback>Обратный звонок</button>
 	</div>
 	<section class="promo">
 		<div class="container">
@@ -40,7 +40,7 @@
 				<div class="title title_32 gold">Надежные перевозки для вашего успеха</div>
 				<div class="title title_90 semi-bold">Грузоперевозки<br>рефрижератором</div>
 				<div class="title title_40">В Минске и Минской области</div>
-				<button class="button">Рассчитать стоимость</button>
+				<button class="button" data-modal>Рассчитать стоимость</button>
 				<div class="promo_arrows">
 					<img src="icons/arrow.svg" alt="arrow">
 					<img src="icons/arrow.svg" alt="arrow">
@@ -112,7 +112,7 @@
 								<div class="title title_24">задняя</div>
 							</div>
 						</div>
-						<button class="button">Заказать</button>
+						<button class="button" data-modal>Заказать</button>
 					</div>
 					<div class="services_item_image">
 						<img src="img/services/service_1.png" alt="service">
@@ -139,7 +139,7 @@
 								<div class="title title_24">задняя</div>
 							</div>
 						</div>
-						<button class="button">Заказать</button>
+						<button class="button" data-modal>Заказать</button>
 					</div>
 					<div class="services_item_image">
 						<img src="img/services/service_2.png" alt="service">
@@ -166,7 +166,7 @@
 								<div class="title title_24">задняя</div>
 							</div>
 						</div>
-						<button class="button">Заказать</button>
+						<button class="button" data-modal>Заказать</button>
 					</div>
 					<div class="services_item_image">
 						<img src="img/services/service_3.png" alt="service">
@@ -193,7 +193,7 @@
 								<div class="title title_24">задняя</div>
 							</div>
 						</div>
-						<button class="button">Заказать</button>
+						<button class="button" data-modal>Заказать</button>
 					</div>
 					<div class="services_item_image">
 						<img src="img/services/service_4.png" alt="service">
@@ -220,7 +220,7 @@
 								<div class="title title_24">задняя</div>
 							</div>
 						</div>
-						<button class="button">Заказать</button>
+						<button class="button" data-modal>Заказать</button>
 					</div>
 					<div class="services_item_image">
 						<img src="img/services/service_5.png" alt="service">
@@ -310,7 +310,7 @@
 					<input type="text" name="phone" placeholder="Номер телефона" class="contacts_form_input" required>
 				</div>
 				<textarea name="message" placeholder="Введитe сообщение" rows="2" required></textarea>
-				<button class="button">Отправить</button>
+				<button type="submit" class="button">Отправить</button>
 			</form>
 		</div>
 	</section>
@@ -331,6 +331,97 @@
 			</a>
 		</div>
 	</section>
+	<div class="consult">
+		<div class="consult_modal">
+			<img class="consult_close" data-close src="icons/close_modal.svg" alt="close">
+			<div class="consult_content">
+				<div class="title title_48 semi-bold">Закажите расчёт перевозки <nobr>и бесплатную консультацию!</nobr></div>
+				<form class="consult_form" action="#">
+					<input type="hidden" name="theme" value="Расчёт и консультация">
+					<input type="hidden" name="utm_source" class="utm_source" value="">
+					<input type="hidden" name="utm_medium" class="utm_medium" value="">
+					<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+					<input type="hidden" name="utm_content" class="utm_content" value="">
+					<input type="hidden" name="utm_term" class="utm_term" value="">
+					<input type="text" name="name" placeholder="Введите имя" class="consult_form_input" required>
+					<input type="text" name="phone" placeholder="+375 ()" class="consult_form_input" required>
+					<textarea name="message" placeholder="Введитe сообщение" rows="2" required></textarea>
+                    <label for="consult_form_checkbox" class="consult_form_label title title_14">
+                        <input type="checkbox" name="checkbox" id="consult_form_checkbox" class="consult_form_checkbox" required checked>
+                        <span class="consult_form_view">
+                            <img class="consult_form_icon" src="icons/policy.svg" alt="box">
+                        </span>
+                        Даю согласие на обработку моих <span class="gold">персональных данных </span>
+                    </label>
+                    <button type="submit" class="button">Заказать звонок</button>
+				</form>
+			</div>
+			<img class="consult_image" src="img/promo_car.png" alt="car">
+			<div class="promo_arrows">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+			</div>
+		</div>
+	</div>
+	<div class="callback">
+		<div class="callback_modal">
+			<img class="callback_close" data-close src="icons/close_modal.svg" alt="close">
+			<div class="callback_content">
+				<div class="title title_48 semi-bold gold">Закажите обратный звонок</div>
+				<div class="title title_24">Мы свяжемся с вами в течение одной минуты и предоставим ответы на ваши вопросы о грузовых перевозках</div>
+				<form class="callback_form" action="#">
+					<input type="hidden" name="theme" value="Обратный звонок">
+					<input type="hidden" name="utm_source" class="utm_source" value="">
+					<input type="hidden" name="utm_medium" class="utm_medium" value="">
+					<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+					<input type="hidden" name="utm_content" class="utm_content" value="">
+					<input type="hidden" name="utm_term" class="utm_term" value="">
+					<input type="text" name="name" placeholder="Введите имя" class="callback_form_input" required>
+					<input type="text" name="phone" placeholder="+375 ()" class="callback_form_input" required>
+					<textarea name="message" placeholder="Введитe сообщение" rows="2" required></textarea>
+                    <label for="callback_form_checkbox" class="callback_form_label title title_14">
+                        <input type="checkbox" name="checkbox" id="callback_form_checkbox" class="callback_form_checkbox" required checked>
+                        <span class="callback_form_view">
+                            <img class="callback_form_icon" src="icons/policy.svg" alt="box">
+                        </span>
+                        Даю согласие на обработку моих <span class="gold">персональных данных </span>
+                    </label>
+                    <button type="submit" class="button">Заказать звонок</button>
+				</form>
+			</div>
+			<img class="callback_image" src="img/promo_car.png" alt="car">
+			<div class="promo_arrows">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+			</div>
+		</div>
+	</div>
+	<div class="thanks">
+		<div class="thanks_modal">
+			<img class="thanks_close" data-close src="icons/close_modal.svg" alt="close">
+			<div class="thanks_content">
+				<div class="title title_48 semi-bold gold">Спасибо!</div>
+				<div class="title title_24">Мы свяжемся с вами в течение одной минуты и предоставим ответы на ваши вопросы о грузовых перевозках</div>
+			</div>
+			<img class="thanks_image" src="img/thanks_bg.png" alt="thanks">
+			<div class="promo_arrows">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+				<img src="icons/arrow.svg" alt="arrow">
+			</div>
+		</div>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<div class="footer_wrapper">
@@ -348,6 +439,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

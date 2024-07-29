@@ -1,0 +1,56 @@
+@media (max-width: 992px) {
+    .advantages {
+        padding-top: 13.888vw;
+        &_wrapper {
+            flex-direction: column;
+        }
+        &_left {
+            gap: 4.166vw;
+            padding: 4.166vw 0;
+            width: 100%;
+            border-bottom: none;
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+                gap: 3.055vw;
+            }
+            img {
+                display: none;
+                margin-top: 0;
+                width: auto;
+                height: 8.055vw;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+        &_right {
+            width: 100%;
+        }
+        &_item {
+            padding: 4.166vw 0;
+            width: 100%;
+            border: none;
+            border-top: 2px solid #d9d9d9;
+            &:last-child {
+                border-bottom: 2px solid #d9d9d9;
+            }
+            img {
+                width: 20.555vw;
+            }
+            .circle {
+                width: 14.444vw;
+            }
+            .title_20 {
+                margin-top: 2.222vw;
+            }
+            .title_24 {
+                margin-top: 4.166vw;
+            }
+        }
+        &_item.wide {
+            padding: 4.166vw 0;
+            width: 100%;
+        }
+    }
+}
